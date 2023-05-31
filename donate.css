@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+.page7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(./turtles-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+}
+
+nav .logo {
+    margin-top: 20px;
+    padding: 2px 30px;
+}
+
+.back-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media (min-aspact-ratio:16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspact-ratio:16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+}
+
+nav li {
+    margin-right: 10px;
+    position: relative;
+}
+
+nav li ul {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background-color: #080808af;
+    padding: 10px;
+    display: none;
+    margin-top: 5px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li ul li {
+    margin: 0px 0;
+}
+
+nav li ul li a {
+    color: rgb(224, 224, 224);
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 110px;
+    color: #fff;
+    font-weight: 580;
+    margin-top: 80px;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 8px 50px;
+    border-radius: 50px;
+    margin-top: 130px;
+}
+
+
+/* Main styles */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h1 {
+    font-size: 60px;
+    color: #000000;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footernav {
+    margin: 30px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav ul li a {
+    color: whitesmoke;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5;
+
+}
+
+.footernav ul li a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    background-color: rgb(135, 135, 135);
+    padding: 20px;
+    text-align: center;
+
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 100px;
+    border: 1px solid rgb(17, 17, 17);
+    background-color: #40adce;
+    border-radius: 10px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    /* border: 3px solid green; */
+}
+
+form {
+    text-align: center;
+}
+
+fieldset {
+    /* margin: 5% 30%; */
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #8f8e8e;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]+label {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a682c;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container>div {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.grid-container>div img {
+    display: block;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+img {
+    /* padding: 0; */
+    border-radius: 20px;
+
+}
